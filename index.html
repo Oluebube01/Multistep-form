@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foma Multi Step Form</title>
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Main sidebar styling -->
+        <div id="side-bar">
+            <!-- step 1 sidebar styling -->
+            <div class="step1 step">
+                <button class="circle first">
+                    1
+                </button>
+                <div class="step1-details step-details">
+                    <p>STEP 1</p>
+                    <h2>YOUR INFO</h2>
+                </div>
+            </div>
+            <!-- step 2 sidebar styling -->
+            <div class="step2 step">
+                <button class="circle second">
+                    2
+                </button>
+                <div class="step2-details step-details">
+                    <p>STEP 2</p>
+                    <h2>SELECT PLAN</h2>
+                </div>
+            </div>
+            <!-- step 3 sidebar styling -->
+            <div class="step3 step">
+                <button class="circle third">
+                    3
+                </button>
+                <div class="step3-details step-details">
+                    <p>STEP 3</p>
+                    <h2>ADD ONS </h2>
+                </div>
+            </div>
+            <!-- step 4 sidebar styling -->
+            <div class="step4 step">
+                <button class="circle forth">
+                    4
+                </button>
+                <div class="step4-details step-details">
+                    <p>STEP 4</p>
+                    <h2>SUMMARY</h2>
+                </div>
+            </div>
+            <div class="step-mobile">
+                <button class="circle first-mobile">
+                    1
+                </button>
+                <button class="circle second-mobile">
+                    2
+                </button>
+                <button class="circle third-mobile">
+                    3
+                </button>
+                <button class="circle forth-mobile">
+                    4
+                </button>
+            </div>
+        </div>
+        <div id="details">
+            <!-- step 1 details styling -->
+            <div class="info">
+                <h1>Personal info</h1>
+                <h4>Please provide your name, email address and phone number</h4>
+                <form action="">
+                <p>Name</p>
+                <input type="text" required placeholder=" e.g John Doe">
+                <p>Email Address</p>
+                <input type="email" name="user-email" id="#user-email" placeholder=" e.g john*****@gmail.com" required>
+                <p>Phone Number</p>
+                <input type="text" name="user-number" id="#user-number" required placeholder=" e.g +234*********32">
+            </form>
+            </div>
+            <div class="plan">
+                <h1>Select your plan</h1>
+                <h4>You have the option of monthly or yearly billing.</h4>
+                <div class="plan-div">
+                    <div class="arcade plan-card">
+                        <img src="./icon-arcade.svg" alt="">
+                        <h3>Arcade</h3>
+                        <h4>$9/mo</h4>
+                    </div>
+                    <div class="advanced plan-card">
+                        <img src="./icon-advanced.svg" alt="">
+                        <h3>Advanced</h3>
+                        <h4>$12/mo</h4>
+                    </div>
+                    <div class="pro plan-card">
+                        <img src="./icon-pro.svg" alt="">
+                        <h3>Pro</h3>
+                        <h4>$15/mo</h4>
+                    </div>
+                </div>
+                <div class="toggle">
+                    <div class="monthly">Monthly</div>
+                    <!-- <button class="toggle"></button> -->
+                    <div class="yearly">Yearly</div>
+                </div>
+            </div>
+            <div class="add-ons">
+                <h1>Pick add-ons</h1>
+                <h4>Add-ons help enhance your gaming experience.</h4>
+                <div class="add-div">
+                    <div class="service add-card">
+                        <div class="icon"><img src="./icon-checkmark.svg" alt="">
+                        </div>
+                        <div class="service-details details ">
+                            <h1 class="small-h1">Online service</h1>
+                            <h4 class="small-h4">Access to multiplayer games</h4>
+                        </div>
+                        <div class="amount-card">
+                            <h3  class="amount">+$1/mo</h3>
+                        </div>
+                    </div>
+                    <div class="storage add-card">
+                        <div class="icon"><img src="./icon-checkmark.svg" alt="">
+                        </div>
+                        <div class="storage-details details">
+                            <h1 class="small-h1">Large storage</h1>
+                            <h4 class="small-h4">Extra 1TB of cloud save</h4>
+                        </div>
+                        <div class="amount-card">
+                            <h3  class="amount">+$2/mo</h3>
+                        </div>
+                    </div>
+                    <div class="profile add-card">
+                        <div class="icon"><img src="./icon-checkmark.svg" alt="">
+                        </div>
+                        <div class="profile-details details">
+                            <h1 class="small-h1">Customizable profile</h1>
+                            <h4 class="small-h4">custom theme on your profile</h4>
+                        </div>
+                        <div class="amount-card">
+                            <h3  class="amount">+$2/mo</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <h1>Finishing up</h1>
+                <h4>Double-check everything looks OK before confirming.</h4>
+            </div>
+            <footer>
+                <div class="footer-container">
+                <div class="back-div">
+                    <button class="back-btn">Go Back</button>
+                </div>
+                <div class="next-div">
+                    <button type="submit" class="details-btn">Next Step</button>
+                </div>
+                </div>
+            </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
